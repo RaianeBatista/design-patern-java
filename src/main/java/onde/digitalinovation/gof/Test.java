@@ -1,5 +1,6 @@
 package onde.digitalinovation.gof;
 
+import onde.digitalinovation.gof.facade.Facade;
 import onde.digitalinovation.gof.singleton.SingletonEager;
 import onde.digitalinovation.gof.singleton.SingletonLazy;
 import onde.digitalinovation.gof.singleton.SingletonLazyHolder;
@@ -42,6 +43,11 @@ public class Test {
         robo.setComportamento(agressivo);
         robo.mover();
         robo.mover();
+
+        // Testes relacionados ao Design Pattern Facade :
+        Facade facade = new Facade();
+        facade.migrarCliente("Raiane", "1456874");
+
 
     }
 }
